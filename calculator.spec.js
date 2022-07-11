@@ -5,21 +5,21 @@ describe("Calculator.js", function () {
     expect(calculator.total).toBe(5);
   });
 
-  it("should subtract number to the total", function () {
+  it("should subtract number from the total", function () {
     const calculator = new Calculator();
     calculator.total = 10;
     calculator.substract(4);
     expect(calculator.total).toBe(6);
   });
 
-  it("should multiply number to the total", function () {
+  it("should multiply number with the total", function () {
     const calculator = new Calculator();
     calculator.total = 10;
     calculator.multiply(4);
     expect(calculator.total).toBe(40);
   });
 
-  it("should divide number to the total", function () {
+  it("should divide number from the total", function () {
     const calculator = new Calculator();
     calculator.total = 10;
     calculator.divide(4);
