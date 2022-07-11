@@ -3,17 +3,20 @@ function Calculator() {
 }
 
 Calculator.prototype.add = function (number) {
-    return this.total = this.total + number;
+  return (this.total = this.total + number);
 };
 
 Calculator.prototype.substract = function (number) {
-    return this.total = this.total - number;
+  return (this.total = this.total - number);
 };
 
 Calculator.prototype.multiply = function (number) {
-    return this.total = this.total * number;
+  return (this.total = this.total * number);
 };
 
 Calculator.prototype.divide = function (number) {
-    return this.total = this.total / number;
+  if (number === 0) {
+    throw new Error('number cannot be zero');
+  }
+  return (this.total = this.total / number);
 };
