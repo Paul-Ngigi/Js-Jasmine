@@ -26,4 +26,9 @@ describe("Calculator.js", function () {
     calculator.divide(4);
     expect(calculator.total).toBe(2.5);
   });
+
+  it("should initialize the total", function() {
+    const calculator = new Calculator();
+    expect(calculator.total).toBe(0);
+  })
 });
